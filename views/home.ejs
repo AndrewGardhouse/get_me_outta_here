@@ -1,0 +1,23 @@
+<% layout('layout') -%>
+
+<div class="row">
+  <h4 class="center-align">
+    Hello, <%= user.name %>
+  </h4>  
+</div>
+
+<div class="row">
+  <form action="/sendtext" method="post" class="col s12 center-align">
+
+    <% if(message){ %>
+      <h1>
+        <%= message %>
+      </h1>
+    <% } %>
+
+    <div class="input-field col s12">
+      <button type="submit" class="btn">Get me outta here now!</button>  
+    </div>
+    
+  </form>
+</div>

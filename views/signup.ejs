@@ -1,0 +1,51 @@
+<% layout('layout') %>
+
+<div class="container">
+  <div class="row">
+    <% if(message){ %>
+      <h1>
+        <%= message %>
+      </h1>
+    <% } %>
+  </div>
+  <div class="row">
+    <form action="/signup" method="post" class="col s12">
+
+      <div class="row">
+        <h3>
+          Sign Up
+        </h3>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="name">Name</label>
+          <input type="text" name="name" required="true">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="email">Email address</label>
+          <input type="email" name="email" required="true">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="phonenumber">Phone Number</label>
+          <input type="tel" name="phonenumber" required="true" length="10">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="password">Password</label>
+          <input type="password" name="password" required="true">
+        </div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>

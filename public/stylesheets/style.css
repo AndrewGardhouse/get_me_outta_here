@@ -1,0 +1,42 @@
+body {
+  background-color: #e5fff9;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  background-color: #1de9b6 !important;
+}
+
+footer {
+  background-color: #1de9b6 !important;
+}
+
+nav > div > ul> li > a, nav .button-collapse i {
+  color: black;
+}
+
+.footer-copyright {
+  color: black !important;
+}
+
+.button-collapse i {
+  padding-left: 15%;
+}
+
+#brand {
+  padding-right: 3%;
+  color: black;
+}
+
+.splash {
+  max-width: 100%;
+  height: 625px;
+  background: url(../images/gmoh.jpeg) no-repeat center center scroll;
+  background-size: cover;
+}
