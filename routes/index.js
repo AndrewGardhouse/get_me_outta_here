@@ -51,9 +51,9 @@ router.get('/signout', function(req, res) {
   res.redirect('/');
 });
 
-router.post('/sendtext', isAuthenticated, function(req, res, next){
+router.get('/sendtext', isAuthenticated, function(req, res, next){
   client.sendMessage({
-      to:'+1' + req.user.phonenumber,
+      to:'+' + req.user.phonenumber,
       from: twilio_number,
       body: rant("<greet>, it's <firstname>, <firstname>'s <noun> has been <verb ed>! Hop in the <noun vehicle> and get to the <place> ASAP!!!")
   }, function(err, responseData) {
